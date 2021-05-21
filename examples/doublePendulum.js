@@ -43,7 +43,7 @@ Example.doublePendulum = function() {
     var pendulum = Composites.stack(350, 160, 2, 1, -20, 0, function(x, y) {
         return Bodies.rectangle(x, y, length, width, { 
             collisionFilter: { group: group },
-            frictionAir: 0,
+            frictionAir: -1,
             chamfer: 5,
             render: {
                 fillStyle: 'transparent',
